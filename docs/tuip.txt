@@ -1,0 +1,13 @@
+                                                             JRBlockkop
+                                                           Februar 2026
+                                                                       
+
+                Terminal User Interface Protocol -- TUIP/1.1
+
+This is the docs of the TUIP project.
+
+Table of Contents
+
+1.  Introduction                                                /1.txt
+    1.1  Purpose
+    1.2  Technology
