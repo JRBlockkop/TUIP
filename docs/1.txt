@@ -1,0 +1,79 @@
+                                                             JRBlockkop
+                                                           Februar 2026
+
+
+                Terminal User Interface Protocol -- TUIP/1.1
+
+
+1.  Introduction
+
+
+1.1  Purpose
+
+The Terminal User Interface Protocol (TUIP) is a lightweight,
+text-based application protocol designed for structured communication
+between terminal clients and servers over TCP.
+
+TUIP provides a simple and predictable way to deliver formatted
+terminal content such as pages, menus, lists, and interactive elements
+without requiring graphical environments. The protocol is optimized
+for clarity, low bandwidth usage, and ease of implementation.
+
+Primary goals of TUIP:
+
+- Human-readable transmission format
+- Minimal parsing complexity
+- Stateless request-response model
+- Compatibility with raw TCP connections
+- Structured terminal rendering support
+
+TUIP is particularly suitable for:
+
+- Text-mode applications
+- Remote system interfaces
+- Embedded environments
+- Educational or experimental networking projects
+- Low-resource systems
+
+
+1.2  Technology
+
+TUIP operates over TCP on port 78 by default.
+
+Transport:
+    Protocol: TCP
+    Default Port: 78
+    Encoding: UTF-8
+    Line Ending: LF (\n)
+
+Communication Model:
+
+TUIP follows a simple request-response model:
+
+    Client connects via TCP
+    Client sends a request line
+    Server responds with a TUIP document
+    Connection may close or persist (implementation-defined)
+
+TUIP does not require encryption, authentication, or compression at
+the protocol level. Some features are included in TUIPS. 
+
+Design Principles:
+
+- Line-oriented structure
+- Header + Body separation
+- Deterministic parsing
+- Explicit element definitions
+- No binary framing
+
+A TUIP response is composed of:
+
+    - Status Line
+    - Headers
+    - Blank Line
+    - Body (structured content)
+
+Further structural details are defined in section 2 (Basic Data)
+and section 3 (Syntax).
+
+End of 1.txt
